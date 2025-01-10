@@ -2,13 +2,12 @@ package ru.netology.dao_hibernate.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
+
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,7 +26,7 @@ public class Person implements Serializable {
     private int age;
 
     @Column(nullable = false)
-    private int phone_number;
+    private int phoneNumber;
 
     @Column(name = "city_of_living")
     private String city;
